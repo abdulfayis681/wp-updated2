@@ -28,8 +28,8 @@ services:
       WORDPRESS_DB_NAME: wordpress
     volumes:
       - ./wordpress:/var/www/html
-      - ./wp-content:/var/www/html/wp-content
-      - ./wp-includes:/var/www/html/wp-includes
+      - /var/lib/jenkins/workspace/wordpress/wp-content:/var/www/html/wp-content
+      - /var/lib/jenkins/workspace/wordpress/wp-includes:/var/www/html/wp-includes
 
 volumes:
   mysql_data: {}
